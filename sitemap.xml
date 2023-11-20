@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jgckm.github.io/tags/index.html</loc>
+    
+    <lastmod>2023-11-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jgckm.github.io/posts/e2167196.html</loc>
+    
+    <lastmod>2023-11-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jgckm.github.io/posts/10ce6d4e.html</loc>
+    
+    <lastmod>2023-11-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jgckm.github.io/posts/439c4b80.html</loc>
+    
+    <lastmod>2023-11-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jgckm.github.io/posts/d0edc1ed.html</loc>
+    
+    <lastmod>2023-11-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jgckm.github.io/posts/4d747dbb.html</loc>
     
     <lastmod>2023-11-20</lastmod>
@@ -56,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://jgckm.github.io/posts/bbee8447.html</loc>
+    <loc>https://jgckm.github.io/posts/f6ab952a.html</loc>
     
     <lastmod>2023-11-20</lastmod>
     
@@ -65,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://jgckm.github.io/posts/f6ab952a.html</loc>
+    <loc>https://jgckm.github.io/posts/bbee8447.html</loc>
     
     <lastmod>2023-11-20</lastmod>
     
@@ -199,51 +244,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://jgckm.github.io/tags/index.html</loc>
-    
-    <lastmod>2023-11-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jgckm.github.io/posts/e2167196.html</loc>
-    
-    <lastmod>2023-11-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jgckm.github.io/posts/10ce6d4e.html</loc>
-    
-    <lastmod>2023-11-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jgckm.github.io/posts/439c4b80.html</loc>
-    
-    <lastmod>2023-11-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jgckm.github.io/posts/d0edc1ed.html</loc>
-    
-    <lastmod>2023-11-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://jgckm.github.io/</loc>
@@ -338,14 +338,14 @@
   </url>
   
   <url>
-    <loc>https://jgckm.github.io/tags/C/</loc>
+    <loc>https://jgckm.github.io/tags/CentOS/</loc>
     <lastmod>2023-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://jgckm.github.io/tags/CentOS/</loc>
+    <loc>https://jgckm.github.io/tags/C/</loc>
     <lastmod>2023-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
