@@ -1,0 +1,437 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>JgckM's 踩坑日常 - 外界避风港</title><meta name="author" content="JgckM"><meta name="copyright" content="JgckM"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="JgckM&#39;s 踩坑日常">
+<meta property="og:url" content="https://jgckm.github.io/index.html">
+<meta property="og:site_name" content="JgckM&#39;s 踩坑日常">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/51497452?v=4">
+<meta property="article:author" content="JgckM">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/51497452?v=4"><link rel="shortcut icon" href="/assets/favicon.ico"><link rel="canonical" href="https://jgckm.github.io/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-9EGQPJ04G2"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-9EGQPJ04G2');
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: {"appId":"DH27CHWNQP","apiKey":"3e4083703bd703abf0fc10f3c31a33af","indexName":"jgckm","hits":{"per_page":6},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":250},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: JgckM","link":"链接: ","source":"来源: JgckM's 踩坑日常","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'JgckM\'s 踩坑日常',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-01-03 23:02:57'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="msvalidate.01" content="06A1E1CFFF6C11D2F1D98B031F22B5E8"><meta name="google-site-verification" content="1iYmcXzqnICMn2Oe9DPKAXXWwBTtaf189U_d0_HkaI0"><meta name="baidu-site-verification" content="code-mbKucxQrcS" /><meta name="baidu-site-verification" content="codeva-8fS3a4UVH5" /><link rel="stylesheet" href="/assets/css/style.css"><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="JgckM's 踩坑日常" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://avatars.githubusercontent.com/u/51497452?v=4" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/random/"><i class="fa-fw fa-solid fa-shuffle"></i><span> 随机一文</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fab fa-bandcamp"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messages/"><i class="fa-fw fas fa-message"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="JgckM's 踩坑日常"><span class="site-name">JgckM's 踩坑日常</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/random/"><i class="fa-fw fa-solid fa-shuffle"></i><span> 随机一文</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fab fa-bandcamp"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messages/"><i class="fa-fw fas fa-message"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/posts/35bc9194.html" title="科目一知识点总结"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/jgckM/image@main/cover/202311141713433.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="科目一知识点总结"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/35bc9194.html" title="科目一知识点总结">科目一知识点总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-14T08:44:21.000Z" title="发表于 2023-11-14 16:44:21">2023-11-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%A9%BE%E8%80%83/">驾考</a></span></div><div class="content">科目一小技巧总给一些辅助记忆的小技巧
+假一吊二撤三醉五逃终身；**(驾驶证申请所需时限)**
+转弯过桥上窄道泥路&#x2F;路口&#x2F;人多不好走的路均不能超过30km/h；
+左右观察左超车；**(具备超车条件才能超车)**
+交叉转弯窄路隧道桥梁坡道铁路口50米不能停车,公交站&#x2F;加油站&#x2F;消防局附近 30 米不得停车；**(口 5 站 3)**
+驾驶证到期90天，变更30天内换。
+转弯的机动车让直行的车辆先行，右方道路来车先行，右转弯车让左转弯车先行:(交叉路口会车原则: 直行&gt; 转弯, 右边直行 &gt; 左边直行,左转弯 &gt; 右转弯 )
+驾驶证的有效期为6年，没有扣分记录的第二次换证的为10年。**(六,十,长期)**
+机动车没有违规行为，只有违法行为。**(交通道路安全法)**
+交警手势大于交通信号灯。**(信号灯 🚥 也是人造的,人 &gt; 灯)**
+高速路同向有 2 条车道，右道的速度范围为 60-100km&#x2F;h，左道的速度范 100-120km&#x2F;h。如同方向有 3 条车道，右道的速度范围为 60-90km&#x2F; ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/af260385.html" title="去除桌面小箭头"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/jgckM/image@main/cover/202311141716838.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="去除桌面小箭头"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/af260385.html" title="去除桌面小箭头">去除桌面小箭头</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-10T15:42:44.000Z" title="发表于 2023-11-10 23:42:44">2023-11-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Windows/">Windows</a></span></div><div class="content">去除小箭头
+123456reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /d &quot;%systemroot%\system32\imageres.dll,197&quot; /t reg_sz /ftaskkill /f /im explorer.exeattrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;del &quot;%userprofile%\AppData\Local\iconcache.db&quot; /f /qstart explorerpause
+
+恢复箭头
+123456reg delete &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /ftaskkill /f ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/e2167196.html" title="B站批量删除订阅番剧"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/jgckM/image@main/cover/202311141807995.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="B站批量删除订阅番剧"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/e2167196.html" title="B站批量删除订阅番剧">B站批量删除订阅番剧</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-03T13:02:27.000Z" title="发表于 2023-10-03 21:02:27">2023-10-03</time></span></div><div class="content">批量删除订阅番剧注意这个方法是删除所有订阅的番剧（慎重删除！！！）
+123456789(function cl() &#123;    let e = document.querySelector(&quot;#page-bangumi &gt; div &gt; div.section.bangumi &gt; div &gt; div &gt; ul &gt; li:nth-child(1) &gt; div &gt; ul &gt; li:nth-child(4)&quot;);    if (e) &#123;        e.click();        setTimeout(cl, 0);    &#125;&#125;)();
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/bc8787a6.html" title="MTKClient连接OPPO-A91"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/jgckM/image@main/cover/202311141809483.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MTKClient连接OPPO-A91"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/bc8787a6.html" title="MTKClient连接OPPO-A91">MTKClient连接OPPO-A91</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-04T01:35:02.000Z" title="发表于 2023-07-04 09:35:02">2023-07-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%8E%A9%E6%9C%BA/">玩机</a></span></div><div class="content">准备工作Python你需要 Python 工作环境并且设置好环境变量
+Bypass utility把 Bypass utility 这个项目克隆到本地
+1git clone https://github.com/MTK-bypass/bypass_utility.git
+
+Install1pip install pyusb json5
+
+Payloads将 exploits_collection 克隆到本地
+1git clone https://github.com/MTK-bypass/exploits_collection.git
+
+UsbDk安装UsbDk (64-bit) 我电脑是64位的（要根据你自己电脑位数）
+开始将 exploits_collection 项目里面的 payloads 文件夹 和 default_config.json5 文件复制到 bypass_utility 根目录下 
+12345678910111213bypass_utility│  .gitignore│  default_config.json5 │  libusb-1.0.dll│  LICE ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/824ac3d0.html" title="Python虚拟管理工具"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/jgckM/image@main/default_cover/202208171717227.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python虚拟管理工具"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/824ac3d0.html" title="Python虚拟管理工具">Python虚拟管理工具</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-04T01:16:41.000Z" title="发表于 2023-07-04 09:16:41">2023-07-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Python/">Python</a></span></div><div class="content">前言我在使用Python的虚拟环境的时候感觉很繁琐，在网上找到一个好用的管理工具非常好用 pipnenv
+pipenv 是Kenneth Reitz大神的作品，提供Python的各个版本间的管理，各种包管理。个人觉得是virtualenv pip等工具的合体。
+安装直接使用 pip 安装
+1pip install pipenv
+
+设置环境变量为啥要设置？
+因为不设置环境变量，虚拟环境默认安装在C盘（你要是C盘战士可以跳过），还有就是设置完环境变量虚拟环境就可以在工作目录下了，方便管理
+修改系统变量
+
+
+
+变量名
+变量值
+
+
+
+PIPENV_VENV_IN_PROJECT
+1
+
+
+设置完成，在使用pipenv 测试一下
+使用进入一个文件夹下 初始化虚拟环境
+12345pipenv install #初始化pipenv install --python 3.6 #指定版本pipenv install 包名 #（安装第三方依赖包）pipenv shell #进入虚拟环境。使用exit()可退出虚拟环境
+
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/b5cd49e7.html" title="使用Python切割图片"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/jgckM/image@main/image/202307031901660.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用Python切割图片"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/b5cd49e7.html" title="使用Python切割图片">使用Python切割图片</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-03T09:29:32.000Z" title="发表于 2023-07-03 17:29:32">2023-07-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Python/">Python</a></span></div><div class="content">前言突发奇想，记录一下
+使用在使用之前确保安装了 Pillow
+1pip install Pillow
+
+在这个示例中，我们将使用 Python 编写一个脚本，用于批量切割文件夹中的图片。每个图片都将被分割成 15 个小图片，按照从左到右、从上到下的顺序排列。切割出的小图片将被保存到单独的文件夹中，并且原图也会被保留。
+步骤1. 导入所需库我们将使用os模块来处理文件和文件夹操作，以及PIL库（Python Imaging Library）来处理图片。
+12import osfrom PIL import Image
+
+2. 定义图片切割函数我们需要定义一个函数，用于将单个图片切割成小图片并保存。
+1234567891011121314151617181920212223def split_image(image_path, output_dir):    image = Image.open(image_path)    width, height = image.size    tile_size = 420 // 3  # 每个小图片的边长    count = 1  # 计数器 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/68dc216d.html" title="Sublime Text3简单配置"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/jgckM/image@main/cover/202302162120791.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Sublime Text3简单配置"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/68dc216d.html" title="Sublime Text3简单配置">Sublime Text3简单配置</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-02-16T12:36:08.000Z" title="发表于 2023-02-16 20:36:08">2023-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Notepad/">Notepad</a></span></div><div class="content">前言因为 notepad++ 反华事件，我也决定放弃使用 notepad++ ，现在转到了 Sublime Test 3 这个编辑器颜值可以说不输 vscode，打开速度也是甩 vscode 几条街，而且还支持插件。
+但是我比较喜欢干净的，sublime 每次打开都打开之前的文件，很是烦人，找了好久才找到配置项，特此记录。
+关闭上次打开的文件
+打开时经常打开上一次打开过的文件，很烦人。
+
+打开 SublimeText3 找到 首选项 -&gt; 设置 一次点击
+
+添加一下代码
+12&quot;hot_exit&quot;: false,&quot;remember_open_files&quot;: false,
+
+
+设置中文Shift+Ctrl+P 会弹出一个搜索框，在搜索框中输入关键字 install ,出现下拉选项，点击选择其中的：Package Control: Install Package,如图：
+
+点击 Package Control: Install Package，需要等待一会，他会再次弹出搜索框
+安装完成会弹出成功窗口
+
+
+如果没弹出搜索框，在 Shift+Ctrl ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/439c4b80.html" title="Git设置代理"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/jgckM/image@main/image/202301301507372.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Git设置代理"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/439c4b80.html" title="Git设置代理">Git设置代理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-01-29T13:07:17.000Z" title="发表于 2023-01-29 21:07:17">2023-01-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/GIT/">GIT</a></span></div><div class="content">前言Git相信大家是经常使用的东西了, 通过他来管理我们写的代码, 但是最近我同步代码时总是失败,    git clone的时候很慢有时候就会超时
+于是就在 Google 的帮助下找到了解决办法特此记录一下, Git需要设置代理, 才能正常访问  Github 等网站 
+用到的工具
+Clash For Windwos
+Git
+
+Git设置代理在 Clash 中设置固定的端口, 并且关闭随机端口
+
+全局代理打开 Git 在终端输入一下命令
+1234git config --global https.proxy http://127.0.0.1:7890git config --global https.proxy https://127.0.0.1:7890git config --global http.proxy &#x27;socks5://127.0.0.1:7890&#x27; git config --global https.proxy &#x27;socks5://127.0.0.1:7890&#x27;
+
+根据自己的代理类型来设置
+注意： --glboal 选项指的是 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/d5217737.html" title="初识JAVA"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/jgckM/image@main/image/202212232011946.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="初识JAVA"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/d5217737.html" title="初识JAVA">初识JAVA</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-22T14:10:05.000Z" title="发表于 2022-12-22 22:10:05">2022-12-22</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JAVA/">JAVA</a></span></div><div class="content">引言Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的高级程序设计语言。
+Java 可运行于多个平台，如 Windows, Mac OS 及其他多种 UNIX 版本的系统。
+本教程通过简单的实例将让大家更好的了解 Java 编程语言。
+移动操作系统 Android 大部分的代码采用 Java 编程语言编程。 
+下载JAVAJAVA下载地址传送门
+配置环境变量文字教程在 Windows操作系统中配置环境变量。虽然现在新版本自动配置环境变量了，但是还是推荐自己配置一下环境变量。
+此计算机右键属性 -&gt; 高级系统设置 -&gt; 环境变量 -&gt; 找到系统变量的 path 点进去 -&gt; 删除安装JAVA自动配置的环境变量 -&gt; 在环境变量中新建 -&gt; 变量名 JAVA_HOME 变量值 配置你安装Java的路径(这里不要有bin目录) 设置好了点击 确定-&gt;  来到 系统变量 找到 path 点进去 -&gt; 点击 新建 -&gt; 直接填写 %JAVA_HOME\bin% -&gt; 就此一路确定 即可。
+图文教程此件算 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/bbee8447.html" title="VS中设置#define _CRT_SECURE_NO_WARNINGS的两种方式"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/jgckM/image@main/cover/202212291346533.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="VS中设置#define _CRT_SECURE_NO_WARNINGS的两种方式"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/bbee8447.html" title="VS中设置#define _CRT_SECURE_NO_WARNINGS的两种方式">VS中设置#define _CRT_SECURE_NO_WARNINGS的两种方式</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-18T12:17:29.000Z" title="发表于 2022-12-18 20:17:29">2022-12-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C/">C</a></span></div><div class="content">前言我们在编译老的用 C语言 的开源项目如 lua源包 的时候，可能因为一些老的 .c 文件使用了 strcpy , scanf等不安全的函数，而报警告和错误，而导致无法编译通过。
+此时我们有两种解决方案： 
+方案一在指定的源文件的开头定义：#define _CRT_SECURE_NO_WARNINGS （只会在该文件里起作用）
+方案二在项目属性里设置，这会在整个项目里生效，依次选择：**属性-&gt;配置属性-&gt;C/C++ -&gt;预处理器-&gt;预处理器定义-&gt;编辑**
+最下面加上一行：_CRT_SECURE_NO_WARNINGS  （注意不需要#define）
+如下图所示：
+
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="page-number" href="/page/3/#content-inner">3</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://avatars.githubusercontent.com/u/51497452?v=4" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">JgckM</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/jgckM"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/jgckM" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:z3515235474@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=3515235474&amp;website=www.oicqzone.com" target="_blank" title=""><i class="fab fa-qq"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS链接"><i class="fa fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/35bc9194.html" title="科目一知识点总结"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/jgckM/image@main/cover/202311141713433.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="科目一知识点总结"/></a><div class="content"><a class="title" href="/posts/35bc9194.html" title="科目一知识点总结">科目一知识点总结</a><time datetime="2023-11-14T08:44:21.000Z" title="发表于 2023-11-14 16:44:21">2023-11-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/af260385.html" title="去除桌面小箭头"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/jgckM/image@main/cover/202311141716838.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="去除桌面小箭头"/></a><div class="content"><a class="title" href="/posts/af260385.html" title="去除桌面小箭头">去除桌面小箭头</a><time datetime="2023-11-10T15:42:44.000Z" title="发表于 2023-11-10 23:42:44">2023-11-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/e2167196.html" title="B站批量删除订阅番剧"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/jgckM/image@main/cover/202311141807995.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="B站批量删除订阅番剧"/></a><div class="content"><a class="title" href="/posts/e2167196.html" title="B站批量删除订阅番剧">B站批量删除订阅番剧</a><time datetime="2023-10-03T13:02:27.000Z" title="发表于 2023-10-03 21:02:27">2023-10-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/bc8787a6.html" title="MTKClient连接OPPO-A91"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/jgckM/image@main/cover/202311141809483.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MTKClient连接OPPO-A91"/></a><div class="content"><a class="title" href="/posts/bc8787a6.html" title="MTKClient连接OPPO-A91">MTKClient连接OPPO-A91</a><time datetime="2023-07-04T01:35:02.000Z" title="发表于 2023-07-04 09:35:02">2023-07-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/824ac3d0.html" title="Python虚拟管理工具"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/jgckM/image@main/default_cover/202208171717227.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python虚拟管理工具"/></a><div class="content"><a class="title" href="/posts/824ac3d0.html" title="Python虚拟管理工具">Python虚拟管理工具</a><time datetime="2023-07-04T01:16:41.000Z" title="发表于 2023-07-04 09:16:41">2023-07-04</time></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="item-headline"><i class="fas fa-comment-dots"></i><span>最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/CSS/" style="font-size: 1.15em; color: rgb(95, 114, 165)">CSS</a><a href="/tags/HTML/" style="font-size: 1.15em; color: rgb(183, 70, 104)">HTML</a><a href="/tags/JavaScript/" style="font-size: 1.3em; color: rgb(103, 38, 104)">JavaScript</a><a href="/tags/GIT/" style="font-size: 1.15em; color: rgb(32, 176, 123)">GIT</a><a href="/tags/%E4%BB%A3%E7%90%86/" style="font-size: 1.15em; color: rgb(182, 46, 73)">代理</a><a href="/tags/Linux/" style="font-size: 1.45em; color: rgb(106, 176, 103)">Linux</a><a href="/tags/Shell/" style="font-size: 1.38em; color: rgb(165, 9, 74)">Shell</a><a href="/tags/%E7%8E%A9%E6%9C%BA/" style="font-size: 1.15em; color: rgb(13, 109, 192)">玩机</a><a href="/tags/Python/" style="font-size: 1.22em; color: rgb(124, 91, 106)">Python</a><a href="/tags/SublimeText3/" style="font-size: 1.15em; color: rgb(136, 120, 51)">SublimeText3</a><a href="/tags/Blog/" style="font-size: 1.3em; color: rgb(111, 103, 49)">Blog</a><a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 1.15em; color: rgb(199, 112, 75)">图床</a><a href="/tags/C/" style="font-size: 1.15em; color: rgb(197, 187, 74)">C</a><a href="/tags/CentOS/" style="font-size: 1.22em; color: rgb(54, 55, 117)">CentOS</a><a href="/tags/vim/" style="font-size: 1.15em; color: rgb(30, 126, 100)">vim</a><a href="/tags/vue/" style="font-size: 1.15em; color: rgb(134, 194, 3)">vue</a><a href="/tags/Github/" style="font-size: 1.15em; color: rgb(35, 4, 120)">Github</a><a href="/tags/Windows/" style="font-size: 1.22em; color: rgb(54, 61, 35)">Windows</a><a href="/tags/%E8%AE%B0%E4%BA%8B%E6%9C%AC/" style="font-size: 1.15em; color: rgb(77, 170, 118)">记事本</a><a href="/tags/Pillow/" style="font-size: 1.15em; color: rgb(63, 18, 87)">Pillow</a><a href="/tags/%E5%88%87%E5%89%B2%E5%9B%BE%E7%89%87/" style="font-size: 1.15em; color: rgb(64, 156, 105)">切割图片</a><a href="/tags/nodejs/" style="font-size: 1.15em; color: rgb(99, 187, 176)">nodejs</a><a href="/tags/JAVA/" style="font-size: 1.15em; color: rgb(114, 99, 45)">JAVA</a><a href="/tags/%E7%A7%91%E7%9B%AE%E4%B8%80/" style="font-size: 1.15em; color: rgb(117, 44, 182)">科目一</a><a href="/tags/%E5%A4%87%E4%BB%BD/" style="font-size: 1.15em; color: rgb(38, 61, 6)">备份</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/11/"><span class="card-archive-list-date">十一月 2023</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">七月 2023</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">一月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">十二月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/08/"><span class="card-archive-list-date">八月 2022</span><span class="card-archive-list-count">12</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">23</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2022-08-12T13:35:28.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">18k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-01-03T15:02:57.230Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By JgckM</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"></div><script>window.addEventListener('load', () => {
+  const changeContent = content => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'></a>`
+        }
+
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <div class='name'><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom && ($dom.innerHTML= result)
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const getComment = async () => {
+    try {
+      const res = await fetch('https://waline-jgckm.vercel.app/api/comment?type=recent&count=6', { method: 'GET' })
+      const result = await res.json()
+      const walineArray = result.data.map(e => {
+        return {
+          'content': changeContent(e.comment),
+          'avatar': e.avatar,
+          'nick': e.nick,
+          'url': e.url + '#' + e.objectId,
+          'date': e.time || e.insertedAt
+        }
+      })
+      saveToLocal.set('waline-newest-comments', JSON.stringify(walineArray), 10/(60*24))
+      generateHtml(walineArray)
+    } catch (err) {
+      console.error(err)
+      const $dom = document.querySelector('#card-newest-comments .aside-list')
+      $dom.textContent= "无法获取评论，请确认相关配置是否正确"
+    }
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('waline-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: true,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', 'G-9EGQPJ04G2', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script></div></div>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: true,
+                preloadRatio: 3,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script></body></html>
