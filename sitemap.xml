@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jgckm.github.io/posts/10ce6d4e/</loc>
-    
-    <lastmod>2024-01-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://jgckm.github.io/posts/439c4b80/</loc>
     
     <lastmod>2024-01-03</lastmod>
@@ -182,6 +173,15 @@
   </url>
   
   <url>
+    <loc>https://jgckm.github.io/posts/63256/</loc>
+    
+    <lastmod>2024-01-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jgckm.github.io/posts/35bc9194/</loc>
     
     <lastmod>2024-01-03</lastmod>
@@ -219,6 +219,15 @@
   
   <url>
     <loc>https://jgckm.github.io/posts/e2167196/</loc>
+    
+    <lastmod>2024-01-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jgckm.github.io/posts/10ce6d4e/</loc>
     
     <lastmod>2024-01-03</lastmod>
     
